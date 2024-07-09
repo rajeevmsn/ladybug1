@@ -1,0 +1,273 @@
+* {
+    font-family: sans-serif;
+    font-size: calc(.5em + 1vw);
+    margin: 0;
+    padding: 0;
+}
+
+html,
+.fullscreen{
+    display: flex;
+    height: 100%;
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+.oldData{
+    position: absolute;
+    top: 70%
+}
+  
+/* #content,
+#logo,
+#message {
+    
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#message {
+    top: 10%;
+    width: 350px;
+    color: #555;
+} */
+
+/* #content {
+    width: 90%;
+    height: 50%;
+    background: #eee;
+}
+
+#logo {
+    top: 25%;
+    font-size: 96px;
+} */
+button {
+    
+    width: 25%;
+    height: 50px;
+    background: #89c;
+    border: thin solid #999;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 48px;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background: #67a;
+}
+
+legend {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+  }
+
+/* Header */
+#header>* {
+    float: right;
+}
+
+/*Swap between home and help */
+#message.home > #home {
+    display: block;
+}
+#message.home > #help {
+    display: none;
+}
+
+#message.guide > #home {
+    display: none;
+}
+#message.guide > #help {
+    display: block;
+}
+
+/*Swap between connect and disconnect buttons*/
+#home.connected > #message-connected {
+    display: block;
+}
+#home.connected > #message-disconnected {
+    display: none;
+}
+
+#home:not(.connected) > #message-connected {
+    display: none;
+}
+#home:not(.connected) > #message-disconnected {
+    display: block;
+}
+
+/*Swap between connect watch and get watch data buttons*/
+#bt.btconnected > #message-btconnected {
+    display: block;
+}
+#bt.btconnected > #message-btdisconnected {
+    display: none;
+}
+
+#bt:not(.btconnected) > #message-btconnected {
+    display: none;
+}
+#bt:not(.btconnected) > #message-btdisconnected {
+    display: block;
+}
+
+/*To swap between form and eter delayed annotation button*/
+
+#home.enterPreviousData > #message-enterPreviousData {
+    display: block;
+}
+#home.enterPreviousData > #message-sendPreviousData {
+    display: none;
+}
+
+#home:not(.enterPreviousData) > #message-enterPreviousData {
+    display: none;
+}
+#home:not(.enterPreviousData) > #message-sendPreviousData {
+    display: block;
+}
+
+/* .avatar {
+    fill: grey;
+}
+
+.avatar.connected {
+    fill: #1c1;
+} */
+.button1{
+    position:absolute;
+    top: 5px;
+    right: 5%;
+}
+.guide{
+    position:absolute;
+    top: 5px;
+    left: 5%;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: rgb(227, 227, 227);
+    border: none;
+}
+.box2{
+    position:absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 35%;
+    border-radius: 48px;
+    background: rgb(226, 225, 225); 
+}
+.button2{
+    position: absolute;
+    top: 5%;
+    left:25%;
+    width: 50%;
+}
+.button3{
+    position: absolute;
+    top: 25%;
+    left:25%;
+    width: 50%;
+}
+.button4{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 50%;
+}
+.button5{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    width: 50%;
+}
+.button6a{
+    position:absolute;
+    top: 55%;
+    left: 5%;
+    width: 25%;
+}
+.button6b{
+    position:absolute;
+    top: 55%;
+    left: 37.5%;
+    width: 25%;
+}
+.button6c{
+    position:absolute;
+    top: 55%;
+    right:5%;
+    width: 25%;
+}
+.button7{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+}
+.oldData{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    height: 25%;
+    font-size: calc(.25em + .5vw);
+    /* font-size: calc(.5em + 1vw); */
+}
+.button8{
+    top: 5%;
+    right: 5%;
+    height: 48px;
+    width: 48px;
+}
+/* Custom styles for index.html */
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #89c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #67a;
+}
+
